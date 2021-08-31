@@ -13,10 +13,10 @@ function darkmode(){
     
 }
 
-    
+    // most of the following code were obtained from w3school and many don't work at all;
 
 
-
+var span = document.createElement("SPAN");
 
 function add_list(){
   //adding new elements
@@ -32,12 +32,7 @@ function add_list(){
     document.getElementById('add-todo').value="";
     
 
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
+  
   // adding an icon to each element (doesn't work)
   var myNodelist = document.getElementsByTagName("li");
 var i;
@@ -48,14 +43,18 @@ for (i = 0; i < myNodelist.length; i++) {
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
 }
-//checked (doesn't work )
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'li') {
-    ev.target.classList.toggle('checked');
-    document.body.classList.toggle('checked');
-    console.log("nothing")
-  }
-}, false);
+
+
 }
+// Click on a close button to hide the current list item(doesn't work)
+var non = document.getElementsByClassName("close");
+var i;
+
+  close.onclick = function() {
+    document.querySelector('span')="";
+    console.log("nope");
+    var div = this.parentElement;
+    non.style.display = "none";
+  }
+
 

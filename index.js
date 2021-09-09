@@ -23,7 +23,14 @@ function add_list(){
     var add = document.createElement("li");
     var todo =document.getElementById('add-todo').value;
     var text = document.createTextNode(todo);
+
+    var span = document.createElement("SPAN");
+    span.className = "close";
+
     add.appendChild(text);
+
+    //append the span to the li
+    add.appendChild(span);
     if (todo === '') {
         console.log("You must write something!");
         } else {
@@ -31,22 +38,6 @@ function add_list(){
     }
     document.getElementById('add-todo').value="";
     
-
-  
-  
-  var myNodelist = document.getElementsByTagName("li");
-var i;
-for (i = 0; i < myNodelist.length; i++) { 
-  var span = document.createElement("SPAN");
-  var txt = document.createElement("img");
-  span.className = "close";
-  txt.className ="icon"
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-
-
-}
-
 
 }
 

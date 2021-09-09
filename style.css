@@ -77,9 +77,15 @@ background-color: var(--verylightgray);
     display: flex;
     justify-content: right;
     flex-direction: row;
-    margin-top: -27px;
+    margin-top: -18px;
     margin-left: 390px;
+    width: 50px;
+    height: 50px;
+    background-image: url('./images/icon-cross.svg');
+    background-repeat: no-repeat;
+    
 }
+
 
 .box-typing{
     border-radius: 5px 5px 5px 5px;
@@ -107,6 +113,8 @@ background-color: var(--verylightgray);
 }
 .box-typing .radio{
     background-color: var(--verylightgray);
+    margin-left: 25px;
+
 }
 .box-list{
     border-radius: 5px 5px 5px 5px;

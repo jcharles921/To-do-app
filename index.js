@@ -33,28 +33,36 @@ function add_list(){
     
 
   
-  // adding an icon to each element (doesn't work)
+  
   var myNodelist = document.getElementsByTagName("li");
 var i;
-for (i = 0; i < myNodelist.length; i++) {
+for (i = 0; i < myNodelist.length; i++) { 
   var span = document.createElement("SPAN");
   var txt = document.createElement("img");
   span.className = "close";
+  txt.className ="icon"
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
+
+
 }
 
 
 }
+
 // Click on a close button to hide the current list item(doesn't work)
+/*
 var non = document.getElementsByClassName("close");
-var i;
-
-  close.onclick = function() {
-    document.querySelector('span')="";
+var k;
+for (k=0 ;k< non.length,k++){
+  non[k] .onclick = function() {
+    
     console.log("nope");
-    var div = this.parentElement;
-    non.style.display = "none";
+    var con = this.parentElement;
+    con.style.display = "none";
   }
+}
+*/
+ 
 
 

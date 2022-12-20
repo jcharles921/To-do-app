@@ -93,27 +93,30 @@ background-color: var(--verylightgray);
     width: 520px;
     
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 40px;
-    background-color: var(--verylightgray);
+    flex-direction: column;
+    /* justify-content: space-between; */
+    height: 127px;
+    background-color:#af6eeb;
+}
+.box-typing input{
+    height: 15px;
 }
 .box-typing .add-text{
     font-size: 18px;
     text-decoration: none;
-    width: 450px;
+    width: 60px;
     border: none;
     outline: none;
     border-color: var(--verylightgray);
-    height: auto;
+    height: 15px;
     color: var(--text) ;
     border-radius: 5px 5px 5px 5px;
-    background-color: var(--verylightgray);
+    background-color: #af6eeb;
     
 }
 .box-typing .radio{
     background-color: var(--verylightgray);
-    margin-left: 25px;
+    
 
 }
 .box-list{
@@ -122,7 +125,7 @@ background-color: var(--verylightgray);
     margin-top: 35px;
     width: 520px;
     height: 340px;
-    background-color: var(--text-color);
+    background-color: #af6eeb;
     box-shadow: 0px 20px 15px var(--shadow);
     display: flex;
     flex-direction: column;

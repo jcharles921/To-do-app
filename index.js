@@ -40,20 +40,53 @@ function add_list(){
     
 
 }
+function closeElements() {
+  // Get all elements with the class "close"
+  var closeElements = document.getElementsByClassName("close");
 
-// Click on a close button to hide the current list item(doesn't work)
-/*
-var non = document.getElementsByClassName("close");
-var k;
-for (k=0 ;k< non.length,k++){
-  non[k] .onclick = function() {
-    
-    console.log("nope");
-    var con = this.parentElement;
-    con.style.display = "none";
+  // Loop through all the close elements
+  for (var i = 0; i < closeElements.length; i++) {
+    // Add a click event listener to the element
+    closeElements[i].addEventListener("click", function() {
+      // Set the display style of the element to "none"
+      this.style.display = "none";
+    });
   }
 }
-*/
+closeElements();
+//this is all the failed things before using chatgp
+  // var non= document.getElementsByClassName("close");
+  // var k;
+  // for (k=0 ;k< non.length;k++){
+  //   document.getElementsByClassName("close")[k].addEventListener('click',()=>{
+  //     console.log("nope");
+  //     document.getElementsByClassName("close")[k].style.display = "none";
+  //   })  
+  //   }
+
+// Click on a close button to hide the current list item(doesn't work)
+// function call(){
+//   var non= document.getElementsByClassName("close")
+// var k;
+// for (k=0 ;k< non.length;k++){
+//   non[k].addEventListener('click',()=>{
+//     console.log("nope");
+//     non.style.display = "none";
+//   }) 
+    //try2
+// var non= document.querySelectorAll(".close");
+// var k;
+// non.forEach(close=>{
+// close.addEventListener('click',function handleClick(event){
+  
+//   close.setAttribute("style", 'display:none;')
+//   console.log("close")
+// })
+ 
+
+// })
+
+
  
 
 

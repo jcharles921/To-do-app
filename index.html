@@ -7,7 +7,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Todo app</title>
+  <title>MOMO app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,17 +15,22 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<script src="index.js"></script>
+
 <body >
   <div class="background">
     <div class="box-toggle">
-      <h1>TODO</h1>
+      <h1>MOMO App</h1>
       <img  id="image" onclick="darkmode()" src="./images/icon-moon.svg" alt="">
     </div>
   </div>
   <div class="box-typing">
-       <input class="radio" type="radio" onclick="add_list()" name="" id="add-list">
-        <input class="add-text" type="text"  placeholder="Add to do" name="" id="add-todo">
+                    <input class="radio" type="radio" onclick="add_list()" name="" id="add-list">
+                    <input type="radio" value="">
+                    <input class="add-text" type="text"  placeholder="Add to do" name="" id="add-todo">
+                    <input type="date">
+                    <input type="number"placeholder="Amount">
+                    <input type="text" placeholder="Name">
+
   </div>
   <div class="box-list">
    <ul id="list">
@@ -50,4 +55,6 @@
     </div>
   
 </body>
+
 </html>
+<script src="index.js"></script>

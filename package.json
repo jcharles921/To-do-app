@@ -5,7 +5,10 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "format": "prettier --write \"src/**/*.vue\" \"src/**/*.js\"   \"public/**/*.html\""
+    "format": "prettier --write \"src/**/*.vue\" \"src/**/*.js\"   \"public/**/*.html\"",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build" 
+    
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -14,7 +17,8 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-service": "~5.0.0"
+    "@vue/cli-service": "~5.0.0",
+    "gh-pages": "^6.0.0"
   },
   "_id": "vue-fire@0.1.0",
   "readme": "ERROR: No README data found!"

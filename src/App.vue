@@ -86,6 +86,7 @@ export default {
         document.getElementById("switch").src = "/assets/todo/icon-moon.svg";
         this.rotateDegrees += 360;
       }
+      
     },
     addToList() {
       const text = document.getElementById("input").value;

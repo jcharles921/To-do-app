@@ -75,15 +75,15 @@ export default {
       if (this.theme === "light") {
         this.theme = "dark";
         document.getElementById("background").src =
-          "../public/assets/todo/bg-desktop-dark.jpg";
-        document.getElementById("switch").src = "../public/assets/todo/icon-sun.svg";
-        
+          "/assets/todo/bg-desktop-dark.jpg";
+        document.getElementById("switch").src = "/assets/todo/icon-sun.svg";
+
         this.rotateDegrees += 360;
       } else {
         this.theme = "light";
         document.getElementById("background").src =
           "/assets/todo/bg-desktop-light.jpg";
-        document.getElementById("switch").src = "../public/assets/todo/icon-moon.svg";
+        document.getElementById("switch").src = "/assets/todo/icon-moon.svg";
         this.rotateDegrees += 360;
       }
     },
